@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h2>Nuevo pan</h2>
-	<form action="${action}" method="${method}">
+	<form action="${action}" method="post">
 		<input type="hidden" name="txtId" value="${pan.getId()}">
 		<div>
 			<label for="txtNombre">Nombre</label>
