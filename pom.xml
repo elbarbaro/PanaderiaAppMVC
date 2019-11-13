@@ -10,6 +10,7 @@
 	<url>http://maven.apache.org</url>
 	<properties>
 		<maven.compiler.release>12</maven.compiler.release>
+		<jakartaee>7.0</jakartaee>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -23,6 +24,19 @@
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>8.0.17</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax/javaee-api -->
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>${jakartaee}</version>
+			<scope>provided</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
 		</dependency>
 	</dependencies>
 	<build>
