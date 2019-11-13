@@ -70,10 +70,10 @@ public class ListPanServlet extends HttpServlet {
 					// Por su tipo de dato a través de su indice
 					int id = rs.getInt(1);
 					String nombre = rs.getString(2);
-					String descripcion = rs.getString(6);
-					String tamanyo = rs.getString(4);
-					float precio = rs.getFloat(3);
-					Date fecha = rs.getDate(5);
+					String descripcion = rs.getString(3);
+					float precio = rs.getFloat(4);
+					String tamanyo = rs.getString(5);
+					Date fecha = rs.getDate(6);
 					
 					// Llenar de datos el POJOJILLO
 					pan.setId(id);
