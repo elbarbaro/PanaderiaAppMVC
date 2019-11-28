@@ -23,13 +23,19 @@ public class AltaPanServlet extends HttpServlet {
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		
+		// Poner datos que se manipularan en la vista
 		req.setAttribute("action", getServletContext().getContextPath()+"/pan");
+		req.setAttribute("actionMessage", "Agregar");
+		
+		// Elegir vista a cargar y mandarle los datos
 		req.getRequestDispatcher("formPan.jsp").forward(req, resp);
 	}
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
+		// Obtener datos de la peticion dado su nombre
 		String txtNombre = req.getParameter("txtNombre");
 		String txtDescripcion = req.getParameter("txtDes");
 		String txtTamanyo = req.getParameter("txtTamanyo");

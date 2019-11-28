@@ -25,7 +25,7 @@
 				<td>${pan.getPrecio()}</td>
 				<td>${pan.getFecha()}</td>
 				<td>
-					<form action="pan/actualizar">
+					<form action="${pageContext.servletContext.contextPath}/pan/actualizar">
 						<input type="hidden" name="txtId" value="${pan.getId()}">
 						<input type="submit" >
 					</form>

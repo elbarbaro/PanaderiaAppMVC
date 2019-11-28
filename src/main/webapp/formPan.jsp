@@ -15,7 +15,7 @@
 			<input type="text" id="txtNombre" name="txtNombre" value="${pan.getNombre()}">
 		</div>
 		<div>
-			<label for="txtDes">Descrpcion</label>
+			<label for="txtDes">Descripcion</label>
 			<input type="text" id="txtDes" name="txtDes" value="${pan.getDescripcion()}">
 		</div>
 		<div>
@@ -26,7 +26,7 @@
 			<label for="txtPrecio">Precio</label>
 			<input type="text" id="txtPrecio" name="txtPrecio" value="${pan.getPrecio()}">
 		</div>
-		<input type="submit" value="Agregar">
+		<input type="submit" value="${actionMessage}">
 	</form>
 </body>
 </html>

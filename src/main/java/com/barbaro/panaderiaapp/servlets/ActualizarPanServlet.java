@@ -32,9 +32,11 @@ public class ActualizarPanServlet extends HttpServlet {
 		dbManager = new DatabaseManager(conn);
 		pan = dbManager.getPanById(Integer.parseInt(txtId));
 		
+		DatabaseUtil.closeConnection(conn);
+		
 		req.setAttribute("pan", pan);
 		req.setAttribute("action", getServletContext().getContextPath()+"/pan/actualizar");
-		req.setAttribute("method", "post");
+		req.setAttribute("actionMessage", "Actualizar");
 		req.getRequestDispatcher("/formPan.jsp").forward(req, resp);
 	}
 	
